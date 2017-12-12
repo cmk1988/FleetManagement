@@ -42,8 +42,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dtos\Car.cs" />
+    <Compile Include="Dtos\FreeParkingPlaces.cs" />
+    <Compile Include="Dtos\Garage.cs" />
+    <Compile Include="Dtos\Motorcycle.cs" />
+    <Compile Include="Dtos\ParkingPlace.cs" />
+    <Compile Include="Dtos\ParkingPlaceOutput.cs" />
+    <Compile Include="Dtos\Truck.cs" />
+    <Compile Include="Dtos\Vehicle.cs" />
+    <Compile Include="Enums\Commands.cs" />
+    <Compile Include="Enums\PollutantClasses.cs" />
+    <Compile Include="Factories\CommandDictionaryFactory.cs" />
+    <Compile Include="Factories\CommandExecuterFactory.cs" />
+    <Compile Include="Factories\GarageManagerFactory.cs" />
+    <Compile Include="Factories\ICommandExecuterFactory.cs" />
+    <Compile Include="Factories\VehicleManagerFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CommandExecuter.cs" />
+    <Compile Include="Services\CommandLineParser.cs" />
+    <Compile Include="Services\ConsoleInputOutput.cs" />
+    <Compile Include="Services\CsvImporter.cs" />
+    <Compile Include="Services\FileInputOutput.cs" />
+    <Compile Include="Services\GarageManager.cs" />
+    <Compile Include="Services\GarageParser.cs" />
+    <Compile Include="Services\ICommandExecuter.cs" />
+    <Compile Include="Services\IConsoleInputOutput.cs" />
+    <Compile Include="Services\ICsvImporter.cs" />
+    <Compile Include="Services\IFileInputOutput.cs" />
+    <Compile Include="Services\IGarageManager.cs" />
+    <Compile Include="Services\IGarageParser.cs" />
+    <Compile Include="Services\IVehicleManager.cs" />
+    <Compile Include="Services\IVehicleParser.cs" />
+    <Compile Include="Services\VehicleManager.cs" />
+    <Compile Include="Services\VehicleStringCreator.cs" />
+    <Compile Include="Services\VehicleTaxCalculator.cs" />
+    <Compile Include="Services\VehicleParser.cs" />
+    <Compile Include="Services\VehicleValidChecker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

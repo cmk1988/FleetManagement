@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetManagement.Console", "ConsoleApp1\FleetManagement.Console.csproj", "{3D66198B-E107-43E8-A9DE-DC9C38D24365}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetManagement.Console", "FleetManagement.Console\FleetManagement.Console.csproj", "{3D66198B-E107-43E8-A9DE-DC9C38D24365}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetManagement.Tests", "FleetManagement.Tests\FleetManagement.Tests.csproj", "{D7197CC0-A7EB-4564-8BDE-4070EB07DE9C}"
 EndProject
