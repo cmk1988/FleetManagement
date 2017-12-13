@@ -46,7 +46,7 @@ namespace FleetManagement.Tests
             Assert.AreEqual(expect, result);
         }
 
-        [Test]
+
         public void GetOutputStringTest_Truck()
         {
             var expect = "Mercedes, LG 315, K-GS-04, 1960, 23000 Euro, 2 Achsen, 5.5 t, ";

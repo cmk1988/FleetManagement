@@ -93,7 +93,8 @@ namespace FleetManagementConsole.Services
             Vehicle vehicle;
             if (parameter=="g")
             {
-                var garage = garageParser.Parse(console,out uint count);
+                uint count = 0;
+                var garage = garageParser.Parse(console,out count);
                 if (count > 0)
                 {
                     garageManager.AddGarage(garage, (int)count);
@@ -105,7 +106,8 @@ namespace FleetManagementConsole.Services
             else if (parameter.Contains("+"))
             {
                 parameter = parameter.Replace("+", "");
-                vehicle = vehicleParser.Parse(console, parameter, out int i);
+                int i = 0;
+                vehicle = vehicleParser.Parse(console, parameter, out i);
                 if (vehicle != null && vehicleManager.AddVehicle(vehicle, null))
                 {
                     vehicleManager.AssignParkingPlace(vehicle, garageManager.GetParkingPlace(i));
@@ -207,7 +209,8 @@ namespace FleetManagementConsole.Services
             var result = this.vehicleManager.FindCarsByLicensePlate(parameter);
             foreach (var item in result)
             {
-                this.selectedVehicles.Add(item.Key, item.Value);
+                if(!this.selectedVehicles.Keys.Contains(item.Key))                
+                    this.selectedVehicles.Add(item.Key, item.Value);
             }
         }
 
