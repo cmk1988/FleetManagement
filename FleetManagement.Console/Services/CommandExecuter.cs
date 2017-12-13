@@ -219,7 +219,8 @@ namespace FleetManagementConsole.Services
             var result = this.vehicleManager.SelectInvalid();
             foreach (var item in result)
             {
-                this.selectedVehicles.Add(item.Key, item.Value);
+                if (!this.selectedVehicles.Keys.Contains(item.Key))
+                    this.selectedVehicles.Add(item.Key, item.Value);
             }
         }
 
